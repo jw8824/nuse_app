@@ -6,43 +6,80 @@
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
     font-weight: normal;
     font-display: swap;
-}
-
-@font-face {
-    font-family: 'IbmPlexSans';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Text.woff') format('woff');
-    font-weight: normal;
-    font-display: swap;
-}
+}/* regularh */
 
 @font-face {
     font-family: 'IbmPlexSans';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Medium.woff') format('woff');
     font-weight: 500;
     font-display: swap;
-}
+}/* medium */
 
 @font-face {
     font-family: 'IbmPlexSans';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-SemiBold.woff') format('woff');
     font-weight: 600;
     font-display: swap;
+}/* semi-bold */
+
+@font-face {
+    font-family: 'IbmPlexSans';
+    src: url('.../IBMPlexSansKR-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
 }
 
 
 #wrap {
-    max-width: 1024px;
+    max-width: 480px;
     margin: 0 auto;
-    background-color: white;
     padding: 0 18px;
+    background-color: #fff;
 }
 
 body {
     font-family: 'IbmPlexSans';
     font-weight: normal;
+}
+
+/* 제목 */
+h2,
+h3 {
+    font-weight: 700;
+}
+
+/* 상품명 / 설명 */
+strong.name {
     font-weight: 600;
+}
+
+/* 일반 버튼 & 주요 링크 */
+a,
+button {
     font-weight: 500;
 }
+
+/* 부가 설명 / 서브 텍스트 */
+p,
+span {
+    font-weight: normal;
+}
+
+/* 회사 정보(푸터) */
+.footer_company {
+    font-weight: normal;
+}
+
+/* 푸터 링크 */
+.footer_top a,
+.footer_bottom a {
+    font-weight: 500;/* medium */
+}
+
+.footer_bottom p {
+    font-weight: normal;/* regular */
+}
+
 .header {}
 
 .header .inner {
@@ -88,7 +125,6 @@ body {
 }
 
 .visual .visual_text h2 {
-    font-weight: bold;
     font-size: 24px;
     margin-bottom: 12px;
 }
@@ -96,21 +132,21 @@ body {
 .visual .visual_text p {
     color: white;
     font-size: 14px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 .visual .visual_text a {
-    font-size: 18px;
     display: inline-block;
     border-radius: 10px;
     background-color: black;
     color: white;
-    padding: 8px 25px;
+    padding: 9px 25px;
 }
+
 
 .best_item {
     padding: 77px 0;
-    margin-top: 100px;
+    margin-top: 75px;
 }
 
 .best_item .inner {
@@ -118,8 +154,7 @@ body {
 }
 
 .best_item .inner h3 {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 26px;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -139,7 +174,6 @@ body {
 
 .best_item .item_list .item a .image {
     width: 100%;
-    height: 300px;
 }
 
 .best_item .item_list .item a .image img {
@@ -147,10 +181,9 @@ body {
     height: 100%;
 }
 
-.best_item .item_list .image img {}
 
 .best_item .item_list .item a .name {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     margin-top: 18px;
     display: block;
@@ -178,7 +211,7 @@ body {
     top: -50px;
     left: 50%;
     transform: translate(-50%);
-    font-size: 30px;
+    font-size: 26px;
     font-weight: bold;
     text-align: center;
 }
@@ -190,14 +223,14 @@ body {
 
 .collabo .collabo_text p {
     font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 18px;
+    font-size: 20px;
+    margin-bottom: 12px;
 }
 
 .collabo .collabo_text span {
     color: dimgrey;
     font-size: 14px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     display: block;
 }
 
@@ -206,7 +239,7 @@ body {
     border-radius: 10px;
     background-color: black;
     color: white;
-    padding: 6px 25px;
+    padding: 9px 25px;
 }
 
 .author_wrap {
@@ -230,14 +263,14 @@ body {
 
 .author_wrap .author_text p {
     font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 18px;
+    font-size: 20px;
+    margin-bottom: 12px;
 }
 
 .author_wrap .author_text span {
     display: block;
     font-size: 14px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     color: dimgrey;
 }
 
@@ -246,7 +279,7 @@ body {
     border-radius: 10px;
     background-color: black;
     color: white;
-    padding: 6px 25px;
+    padding: 9px 25px;
 }
 
 .instagram-section {
@@ -268,7 +301,7 @@ body {
 }
 
 .insta-header h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -309,7 +342,7 @@ body {
 }
 
 .youtube-header h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -397,20 +430,17 @@ body {
 
 
 
-
 /* 하단 고정바 */
-/* .bottom_nav {
+.bottom_nav {
     position:fixed;
     bottom: 0;
-    left:  50%;
-    transform: translateX(-50%);
     width: 100%;
-    height: 150px;
-    max-width: 1024px;
+    height: 70px;
+    max-width: 480;
     background-color: #fff;
     border-top: 1px solid #ccc;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
     box-sizing: border-box;
@@ -418,58 +448,14 @@ body {
     border-radius: 10px 10px 0 0;
 }
 
-.bottom_nav .left {
+.bottom_nav .nav_item {
     display: flex;
+    flex-direction: column; /* 아이콘 위, 텍스트 아래 */
     align-items: center;
-    gap: 15px;
 }
 
-.bottom_nav .gift {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 12px;
-}
-
-.bottom_nav .gift img {
+.nav_item img {
     width: 24px;
     height: 24px;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
 }
-
-.bottom_nav .total_price {
-    font-size: 16px;
-}
-
-.bottom_nav strong {
-    font-size: 18px;
-    margin-left: 5px;
-}
-
-.bottom_nav .right {
-    display: flex;
-    gap: 10px;
-}
-
-.bottom_nav .right .cart_btn,
-.bottom_nav .right .buy_btn {
-    
-    border-radius: 10px;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.bottom_nav .right .cart_btn {
-    background-color: #fff;
-    border: 1px solid #000;
-    padding: 10px 40px;
-    
-}
-
-.bottom_nav .right .buy_btn {
-    background-color: #000;
-    color:#fff;
-    padding: 10px 20px;
-}
- */
